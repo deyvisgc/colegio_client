@@ -1,0 +1,47 @@
+<div class="row col-sm-12 py-3">
+    <div class="col flex">
+        <div class="card" style="width: 90%;">
+            <div class="card-header" style="background-color: #0d6efd!important; color: white">
+                Lista de Estudiantes
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-success btn-sm" (click)="abrirModalForm()"><i class="fas fa-user-plus"></i></button>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">usuario</th>
+                            <th scope="col">codigo Estudiante</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Grado</th>
+                            <th scope="col">Fecha Creacion</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>
+                                <button type="button" class="btn btn-success btn-sm me-md-2">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm me-md-2" >
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                                <button type="button" class="btn btn-info btn-sm" style="color: white;">
+                                    <i class="fas fa-key"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<app-form-users #formEstudiante></app-form-users>
